@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class Recycle {
     public static void main(String[] args)  throws IOException{
-        //Write data to a file
+        //Write data to a file and some other stuff
         try {
             FileWriter writer = new FileWriter("houses.txt", false);
             BufferedWriter bufWriter = new BufferedWriter(writer);
@@ -31,7 +31,6 @@ public class Recycle {
             }
             catch (NumberFormatException e) {
                 System.out.println("Please enter a whole number!");
-
             }
 
             //Write loop to write to file
